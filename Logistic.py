@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 
 if __name__ == '__main__':
-    print("hello world")
     data = pd.read_csv("data/Advertising.csv")[["TV", "Radio", "Newspaper", "Sales"]]
     print(data.head())
     X = data[["TV", "Radio", "Newspaper"]]
